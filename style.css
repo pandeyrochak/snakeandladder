@@ -1,0 +1,43 @@
+body{ 
+    margin: 10px 0px 0px 150px;
+}
+canvas{
+    background: url('layout.png');
+    background-repeat: no-repeat;
+    position: relative ;
+    border-right: 4px solid salmon;
+}
+.main{
+    height: 700px;
+    width:1000px;
+    border: 4px solid salmon;
+}
+.board{
+    position: relative;
+    float: left;
+}
+.play-area{
+    position: relative;
+    float: right;
+}
+.dice{
+    position: relative;
+    float: right;
+    /* border: 2px dashed salmon; */
+    transform: translate(-100%,200%);
+    height: 100px;
+    width: 100px;
+    box-shadow: 10px ;
+}
+.roll-die button{
+    border-radius: 50%;
+    height:70px;
+    width:70px;
+    border: 2px solid salmon;
+    background-color: salmon;
+    transform: translate(-120%,330%);
+    outline: none;
+}
+#player-num{
+    transform: translate(-50%,30%);
+}
