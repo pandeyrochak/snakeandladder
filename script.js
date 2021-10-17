@@ -4,8 +4,6 @@ let snakes=[[3,37],[10,28],[16,47],[32,75],[42,96],[71,94]];
 let ladders=[[4,56],[12,50],[14,55],[22,58],[41,79],[54,88]];
 let die_value,i=1;
 var canvas=document.querySelector('canvas');
-let active_player=document.querySelector("body > div.main > div.play-area > div.player-turn")
-
 canvas.height=700;
 canvas.width=700;
 var c=canvas.getContext('2d');
@@ -37,7 +35,7 @@ function reset()
 function turnbyturn()
 {
     i=!i;
-    active_player.innerText(i+1+" 's turn ");
+    console.log(i+1+" 's turn ")
     if(i==0)
     {
         x=p1_position;
